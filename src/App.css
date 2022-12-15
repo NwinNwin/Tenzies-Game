@@ -27,6 +27,10 @@ body{
   justify-content: center;
 }
 
+.dice-held{
+  background-color: #59E391;
+}
+
 .die-div{
   display: grid;
   grid-template: auto auto / repeat(5,1fr);
