@@ -83,7 +83,7 @@ function App() {
         <h1>Roll</h1>
       </button>}
 
-      <div>Win Count : {localStorage.getItem("win")}</div>
+      <div>Win Count : {!localStorage.getItem("win") ? 0 : localStorage.getItem("win")}</div>
 
     </main>
   );
