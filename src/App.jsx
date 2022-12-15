@@ -55,7 +55,7 @@ function App() {
     if (win === 10) {
       setTenzies(true)
       let winTimes;
-      !localStorage.getItem("win") ? winTimes = 1 : winTimes = localStorage.getItem("win");
+      !localStorage.getItem("win") ? winTimes = 0 : winTimes = localStorage.getItem("win");
       localStorage.setItem('win', ++winTimes);
     }
   }, [die])
